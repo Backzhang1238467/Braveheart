@@ -1,0 +1,116 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  /*background-color: #0061cf;*/
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          /*justify-content: center;*/
+  /*margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;*/
+}
+.snow {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  height: 600vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 98vw;
+  z-index: 1;
+}
+.snow:nth-of-type(1) {
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+.snow:nth-of-type(2) {
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+.snow:nth-of-type(3) {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+.rings {
+  position: relative;
+  z-index: -1;
+}
+.ring {
+  height: 50px;
+  width: 50px;
+  border-width: 5px;
+  border-radius: 100%;
+  border-style: solid;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
+}
+@media (min-width: 768px) {
+  .ring {
+    height: 100px;
+    width: 100px;
+    border-width: 10px;
+    margin-left: -50px;
+    margin-top: -50px;
+  }
+}
+.ring--red {
+  border-color: #eb3350;
+  -webkit-transform: translateX(110%) rotate(90deg);
+          transform: translateX(110%) rotate(90deg);
+}
+.ring--green {
+  border-color: #1f8b3d;
+  -webkit-transform: translate(55%, 45%) rotate(180deg);
+          transform: translate(55%, 45%) rotate(180deg);
+  z-index: 2;
+}
+.ring--black {
+  border-color: #000;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.ring--blue {
+  border-color: #1587c1;
+  -webkit-transform: translateX(-110%);
+          transform: translateX(-110%);
+}
+.ring--yellow {
+  border-color: #fab23f;
+  -webkit-transform: translate(-55%, 45%);
+          transform: translate(-55%, 45%);
+  z-index: 1;
+}
+.ring-segment {
+  border-bottom-color: transparent;
+  z-index: 3;
+}
+@-webkit-keyframes move {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100vh;
+  }
+}
+@keyframes move {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100vh;
+  }
+}

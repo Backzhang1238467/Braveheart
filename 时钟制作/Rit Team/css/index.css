@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.w {
+    width: 916px;
+    margin: 0 auto;
+}
+body {
+    font-size: 14px;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.saodao {
+    position: absolute;
+    top: 800px;
+    left: 500px;
+    opacity: 0.6;
+}
+.mark1 {
+    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.mark2 {
+    float: right;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 3;
+}
+.snow-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 100001;
+}
+.underline   {
+    position: absolute;
+    top: 4085px;
+    left: 0;
+    height: 2px;
+    width: 1280px;
+    background-color: #EAEAEC;
+
+}
+nav {
+    background-color: #282828;
+    width: 100%;
+    height: 79px;
+    z-index: 2;
+}
+table{
+    /*background-color: pink;*/
+    height: 79px;
+}
+table td {
+    display: block;
+    float: left;
+    padding-right: 10px;
+}
+table td a {
+    display: block;
+    float: left;
+    width: 100px;
+    height: 79px;
+    text-align: center;
+    line-height: 79px;
+    color: #646464;
+}
+table td a img {
+    margin-top: 20px;
+}
+table td a:hover {
+    color: #F0F1F1;
+}
+.slide .showNav{ /*用绝对定位给数字按钮进行布局*/
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    text-align:center;
+    font-size: 12px;
+    line-height: 20px;
+
+}
+.slide .showNav span{
+    cursor: pointer;
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ccc
+    margin-left: 2px;
+    color: #fff;
+}
+.slide .showNav .active{
+    background: #ccc;
+}
+.bigbox {
+    width: 1280px;
+    margin: 0 auto;
+    height: 4245px;
+    position: relative;
+}
+
+.bigbox .s1 {
+    position: absolute;
+    top: 290px;
+    left: 570px;
+    z-index: 6;
+}
+.showimg{
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    z-index: 6;
+    display: none;
+}
+.s1:hover .showimg {
+    display: inline-block;
+}
+.s2:hover .showimg {
+    display: inline-block;
+}
+.s3:hover .showimg {
+    display: inline-block;
+}
+.s4:hover .showimg {
+    display: inline-block;
+}
+.s5:hover .showimg {
+    display: inline-block;
+}
+.s6:hover .showimg {
+    display: inline-block;
+}
+.s7:hover .showimg {
+    display: inline-block;
+}
+.s8:hover .showimg {
+    display: inline-block;
+}
+.s9:hover .showimg {
+    display: inline-block;
+}
+.s10:hover .showimg {
+    display: inline-block;
+}
+.bigbox .s2 {
+     position: absolute;
+     top: 675px;
+     left: 925px;
+     z-index: 6;
+ }
+.bigbox .s3 {
+    position: absolute;
+    top: 735px;
+    left: 175px;
+    z-index: 6;
+}
+.bigbox .s4 {
+    position: absolute;
+    top: 1075px;
+    left: 470px;
+    z-index: 6;
+}
+.bigbox .s5 {
+    position: absolute;
+    top: 1845px;
+    left: 861px;
+    z-index: 6;
+}
+.bigbox .s6 {
+    position: absolute;
+    top: 2225px;
+    left: 299px;
+    z-index: 6;
+}
+.bigbox .s7 {
+     position: absolute;
+     top: 2370px;
+     left: 1022px;
+     z-index: 6;
+ }
+.bigbox .s8 {
+     position: absolute;
+     top: 2835px;
+     left: 590px;
+     z-index: 6;
+ }
+.bigbox .s9 {
+    position: absolute;
+    top: 2699px;
+    left: 299px;
+    z-index: 6;
+}
+.bigbox .s10 {
+    position: absolute;
+    top: 3570px;
+    left: 450px;
+    z-index: 6;
+}
+.bigbox .car1  {
+      position: absolute;
+      top: 30px;
+      z-index: 2;
+      left: 200px;
+}
+.bigbox .shadow {
+    position: absolute;
+    top: 0px;
+    left: -12px;
+    opacity: 0.7;
+
+}
+.bigbox .car2  {
+    position: absolute;
+    top: 30px;
+    left: 250px;
+    z-index: 2;
+    animation: go 5s;
+    transform: rotate(0deg);
+}
+.bigbox .car3  {
+    position: absolute;
+    top: 3500px;
+    left: 300px;
+    z-index: 2;
+    /*animation: go 5s;*/
+    /*transform: rotate(0deg);*/
+}
+@keyframes go {
+    from {
+        transform: translatey(30px)
+    }
+    to {
+
+        transform: translatey(3500px)
+    }
+}
+.bigbox .car4  {
+    position: absolute;
+    top: 200px;
+    left: 800px;
+    z-index: 2;
+    /*animation: go 5s;*/
+    transform: rotate(-60deg);
+}
+.bigbox .car5  {
+    position: absolute;
+    top: 600px;
+    left: 750px;
+    z-index: 2;
+    /*animation: go 5s;*/
+    transform: rotate(60deg);
+}
+.bigbox .car6  {
+    position: absolute;
+    top: 1100px;
+    left: 350px;
+    z-index: 2;
+    /*animation: go 5s;*/
+    transform: rotate(-60deg);
+}
+.bigbox .car7  {
+    position: absolute;
+    top: 1750px;
+    left: 750px;
+    z-index: 2;
+    /*animation: go 5s;*/
+    transform: rotate(60deg);
+}
+.bigbox .car8  {
+    position: absolute;
+    top: 2100px;
+    left: 350px;
+    z-index: 2;
+    /*animation: go 5s;*/
+    transform: rotate(-40deg);
+}
+.bigbox .car9  {
+    position: absolute;
+    top: 2300px;
+    left: 900px;
+    z-index: 2;
+    /*animation: go 5s;*/
+    transform: rotate(-40deg);
+}
+.bigbox .car10  {
+    position: absolute;
+    top: 2740px;
+    left: 500px;
+    z-index: 2;
+    /*animation: go 5s;*/
+    transform: rotate(90deg);
+}
+.bigbox .alert1{
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    position: absolute;
+    top: 46px;
+    left: 48px;
+    z-index: 3;
+    border-radius: 50%;
+    animation: go 2s;
+    -webkit-animation: Lights 0.5s infinite;
+    -moz-animation: Lights 0.5s infinite;
+    animation:Lights 0.5s infinite;
+}
+.bigbox .alert2{
+    width: 8px;
+    height:8px;
+    background-color: red;
+    position: absolute;
+    top: 46px;
+    left: 55px;
+    z-index: 3;
+    border-radius: 50%;
+    animation: go 2s;
+    -webkit-animation: Lights 0.5s infinite;
+    -moz-animation: Lights 0.5s infinite;
+    animation:Lights 0.5s infinite;
+}
+.bigbox .Lights  {
+     position: absolute;
+     top: -85px;
+     z-index: 990;
+     left: 8px;
+    /*transform: rotate(-30deg);*/
+    animation: go 2s;
+    -webkit-animation: Lights 0.5s infinite;
+    -moz-animation: Lights 0.5s infinite;
+    animation:Lights 0.5s infinite;
+}
+@-webkit-keyframes Lights{ /*设置内容由显示变为隐藏*/
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.slide {
+    position: absolute;
+    top: 1300px;
+    padding: 20px;
+    left: 36%;
+    width: 620px;
+    height: 436px;
+    margin-left: -458px;
+    background-color: rgba(0,0,0,0.7);
+    overflow: hidden;
+    z-index: 1;
+}
+.slide ul {
+    width: 4095px;
+    height: 390px;
+    position: relative;
+
+}
+.slide li {
+    width: 600px;
+    height: 390px;
+    float: left;
+    position: relative;
+    /*display: none;*/
+}
+.slide li img {
+    transition: all 0.2s;
+}
+.slide li:hover img {  /*鼠标经过section 的时候 里面的img做 缩放*/
+    transform: scale(1.2);
+}
+.team {
+    width: 628px;
+    height: 168px;
+    position: absolute;
+    left: 230px;
+    top: 300px;
+    text-decoration: none;
+}
+.team span {
+    width: 315px;
+    height: 115px;
+}
+.team span a {
+    height: 115px;
+    font-size: 12px;
+    display: block;
+    margin-right: 10px;
+}
+.team h3 {
+    color: #eb3350;
+}
+.s11 {
+    position: absolute;
+    top: 1980px;
+    left: 530px;
+    z-index: 1;
+}
+.team2 {
+    width: 588px;
+    height: 554px;
+    /*background-color: pink;*/
+    opacity: 0.7;
+    position: absolute;
+    top: 2362px;
+    left: 262px;
+}
+.team2 h3 {
+    color: #eb3350;
+}
+.park {
+    position: absolute;
+    top: 3400px;
+    left: 450px;
+    z-index: 1;
+    transform: rotate(90deg);
+
+}
+footer {
+    display: block;
+    width: 1150px;
+    height: 92px;
+    /*background-color: green;*/
+    margin: 10px auto;
+    position: absolute;
+    top: 4100px;
+    left: 90px;
+    /*position: relative;*/
+}
+footer img {
+    display: block;
+    margin: 15px auto;
+}
