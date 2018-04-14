@@ -1,0 +1,96 @@
+#bg {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+.orb1, .orb2 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    left: 50%;
+    margin-top: -280px;
+	margin-left: -30px;
+}
+.orb2 {
+    margin-top: -280px;
+	margin-left: 500px;
+}
+.row1  div,
+.row2  div,
+.row3  div {
+    background-image: -webkit-linear-gradient(top,#FFF,#dedede);
+    border-radius: 50%;
+}
+.row2 .orb1, 
+.row2 .orb2, 
+.row2 .orb3
+{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	top: 50%;
+	left: 50%;
+	margin-top: -280px;
+	margin-left: -500px;
+}
+.row2 .orb2 {
+	margin-top: -180px;
+	margin-left: 500px;
+}
+.row2 .orb3 {
+	margin-top: 50px;
+	margin-left: 0px;
+}
+.row3 .orb1, .row3  .orb2 {
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	top: 50%;
+	left: 50%;
+	margin-top: 0;
+	margin-left: 0;
+}
+.row3  .orb2 {
+	margin-top: 100px;
+	margin-left: 1000px;
+}
+/* //动画组 */
+.row1 div {
+    animation:  orbmove 80s linear infinite;
+}
+.row2 div {
+    animation:  orbmove 60s linear infinite;
+}
+.row3 div {
+    animation:  orbmove 80s linear infinite;
+}
+@keyframes orbmove {
+    from {
+        transform: translateX(0) rotate(0deg);
+    }
+    to {
+        transform: translateX(-2000px) rotate(-3600deg);
+    }
+}
+/* 第一屏幕 */
+.section1 {
+	perspective: 1000px; /* 透视 */
+}
+.comein .p1 {
+	transform: translate(-50%, -50%)  translateZ(0px) rotateY(0deg);
+}
+.p1 {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%)  translateZ(500px) rotateY(-180deg);
+	width: 880px;
+	height: 320px;
+	background: url(../images/skin.gif) no-repeat;
+	transition: all 1s; /* 过渡不要忘却了 */
+ }
